@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'tsypanov'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-core:4.3.18.RELEASE'
+
+    compile 'org.openjdk.jmh:jmh-core:1.21'
+    compileOnly 'org.openjdk.jmh:jmh-generator-annprocess:1.21'
+}
+

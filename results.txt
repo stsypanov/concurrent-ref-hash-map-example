@@ -1,0 +1,36 @@
+JDK 8
+
+Benchmark                                       Mode  Cnt    Score    Error  Units
+CRHMInstantiation.nonVolatileSegmentReferences  avgt  100  642,783 ± 54,549  ns/op
+CRHMInstantiation.original                      avgt  100  701,816 ±  5,002  ns/op
+CRHMInstantiation.patched                       avgt  100  623,835 ± 19,362  ns/op
+
+
+JDK 11
+
+Benchmark                                       Mode  Cnt    Score    Error  Units
+CRHMInstantiation.nonVolatileSegmentReferences  avgt  100  459,609 ± 11,016  ns/op
+CRHMInstantiation.original                      avgt  100  536,046 ±  8,431  ns/op
+CRHMInstantiation.patched                       avgt  100  486,471 ±  9,320  ns/op
+
+
+----------------------------------------------------------------------------------------------------
+
+-XX:TieredStopAtLevel=1 -noverify
+
+JDK 8
+
+Benchmark                                       Mode  Cnt     Score    Error  Units
+CRHMInstantiation.nonVolatileSegmentReferences  avgt  100  1528,403 ± 33,433  ns/op
+CRHMInstantiation.original                      avgt  100  1599,725 ± 26,774  ns/op
+CRHMInstantiation.patched                       avgt  100   559,686 ±  5,365  ns/op
+
+
+JDK 11
+
+Benchmark                                       Mode  Cnt     Score    Error  Units
+CRHMInstantiation.nonVolatileSegmentReferences  avgt  100  1794,351 ± 18,778  ns/op
+CRHMInstantiation.original                      avgt  100  1838,988 ±  8,069  ns/op
+CRHMInstantiation.patched                       avgt  100   549,785 ±  6,725  ns/op
+
+----------------------------------------------------------------------------------------------------
